@@ -1,11 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100&family=Spartan:wght@900&display=swap');
 
-/* 
-font-family: 'Lora', serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Spartan', sans-serif;
-*/
+/*------------------------------------------- Variable CSS */
+:root {
+    --header-height: 3rem;
 
-h1 {
-    font-family: 'Spartan', sans-serif;
+    /* colours */
+    --hue-color: 210; /*decides your browser theme. Green 144, blue 230, purple 250, pink 340 */
+    --first-color: hsl(var(--hue-color), 35%, 40%);
+    --first-color-second: hsl(var(--hue-color), 50%, 30%);
+    --first-color-alt: hsl(var(--hue-color), 25%, 60%);
+    --first-color-lighter: hsl(var(--hue-color), 25%, 75%);
+
+    --title-color: hsl(var(--hue-color), 45%, 32%);
+    --text-color: hsl(var(--hue-color), 39%, 27%);
+    --mainText: hsl(var(--hue-color), 30%, 22%);
+    --text-color-light: hsl(var(--hue-color), 25%, 90%);
+    --input-color: hsl(var(--hue-color), 26%, 50%);
+    --body-color: hsl(var(--hue-color), 60%, 95%);
+    --container-color: #FAFAFA;
+    --scroll-bar-color: hsl(var(--hue-color), 25%, 85%);
+    --scroll-thumb-color: hsl(var(--hue-color), 25%, 65%);
+    --gradient-color: linear-gradient(0deg, rgba(128,153,179,1) 0%, rgba(37,73,109,1) 100%);
+
+    /* fonts */
+    --body-font: 'Poppins', sans-serif;
+    --title-font: 'Spartan', sans-serif; /* (gullible) */
+
+    --big-font-size: 2 rem;
+    --h1-font-size: 1.5 rem;
+    --h2-font-size: 1.25 rem;
+    --h3-font-size: 1.12 rem;
+    --normal-font-size: 0.9 rem;
+    --small-font-size: 0.75 rem;
+    --smaller-font-size: 0.6 rem;
+
+    --font-medium: 400;
+    --font-semi-bold: 550;
+    --font-bold: 700;
+
+    /* margin bottom */
+    --mb-0-25: 0.25 rem;
+    --mb-0-5: 0.5 rem;
+    --mb-0-75: 0.75 rem;
+    --mb-1: 1 rem;
+    --mb-1-25: 1.25 rem;
+    --mb-1-5: 1.5 rem;
+    --mb-2: 2 rem;
+    --mb-2-5: 2.5 rem;
+    --mb-3: 3 rem;
+
+    /* z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+} 
+
+/* font size for larger devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3 rem;
+        --h1-font-size: 2.2 rem;
+        --h2-font-size: 1.5 rem;
+        --h3-font-size: 1.25 rem;
+        --normal-font-size: 1 rem;
+        --small-font-size: 0.90 rem;
+        --smaller-font-size: 0.80 rem;
+    }
 }
