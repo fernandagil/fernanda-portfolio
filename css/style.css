@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100&family=Spartan:wght@900&display=swap');
 
-/*------------------------------------------- Variable CSS */
+/*------------------------------------------------- Variable CSS */
+
 :root {
     --header-height: 3rem;
 
@@ -67,3 +68,45 @@
         --smaller-font-size: 0.80 rem;
     }
 }
+
+/*------------------------------------------------- Dark Theme */
+
+/* variable color dark theme */
+body.dark-theme {
+    --first-color: hsl(var(--hue-color), 35%, 40%);
+    --first-color-second: hsl(var(--hue-color), 66%, 21%);
+    --first-color-alt: hsl(var(--hue-color), 25%, 60%);
+    --first-color-lighter: hsl(var(--hue-color), 25%, 75%);
+
+    --title-color: hsl(var(--hue-color), 35%, 95%);
+    --text-color: hsl(var(--hue-color), 35%, 85%);
+    --mainText: hsl(var(--hue-color), 30%, 70%);
+    --text-color-light: hsl(var(--hue-color), 25%, 90%);
+    --input-color: hsl(var(--hue-color), 29%, 29%);
+    --body-color: hsl(var(--hue-color), 60%, 16%);
+    --container-color: hsl(var(--hue-color), 26%, 60%);
+    --scroll-bar-color: hsl(var(--hue-color), 15%, 50%);
+    --scroll-thumb-color: hsl(var(--hue-color), 15%, 40%);
+}  
+
+/* nav buttons dark theme */
+.nav__butns {
+    display: flex;
+    align-items: center;
+    padding-left: var(--mb-0-5);
+    margin: 0;
+    margin-top: -5px;
+}
+
+.change-theme {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+
+.change-theme:hover {
+    color: var(--first-color);
+}
+
+
