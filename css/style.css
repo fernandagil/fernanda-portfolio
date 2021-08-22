@@ -6,7 +6,7 @@
     --header-height: 3rem;
 
     /* colours */
-    --hue-color: 210; /*decides your browser theme. Green 144, blue 230, purple 250, pink 340 */
+    --hue-color: 210;
     --first-color: hsl(var(--hue-color), 35%, 40%);
     --first-color-second: hsl(var(--hue-color), 50%, 30%);
     --first-color-alt: hsl(var(--hue-color), 25%, 60%);
@@ -25,7 +25,7 @@
 
     /* fonts */
     --body-font: 'Poppins', sans-serif;
-    --title-font: 'Spartan', sans-serif; /* (gullible) */
+    --title-font: 'Spartan', sans-serif;
 
     --big-font-size: 2 rem;
     --h1-font-size: 1.5 rem;
@@ -89,7 +89,7 @@ body.dark-theme {
     --scroll-thumb-color: hsl(var(--hue-color), 15%, 40%);
 }  
 
-/* nav buttons dark theme */
+/* nav buttons dark/light theme */
 .nav__butns {
     display: flex;
     align-items: center;
@@ -109,4 +109,84 @@ body.dark-theme {
     color: var(--first-color);
 }
 
+/*------------------------------------------------- Base CSS */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--first-color-second);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* reusable CSS classes */
+.section {
+    padding: 2rem 0 4 rem;
+    margin: auto;
+    min-height: 80vh;
+}
+
+.section__title {
+    font-size: var(--big-font-size);
+    font-family: var(--body-font);
+}
+
+.section__subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section__title,
+.section__subtitle {
+    text-align: center;
+}
+
+/*------------------------------------------------- Base CSS */
+
+.container {
+    margin-right: var(--mb-1);
+}
+
+.grid {
+    display: grid;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
 
